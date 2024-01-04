@@ -11,7 +11,7 @@ const writeFile = async (fileName, fileContent) => {
     }
     catch{
         try{
-            await fs.appendFile(fileContent,"Newton School");
+            await fs.appendFile(fileName,fileContent);
                 console.log(`File ${fileName} created and data written successfully!`);
             
         }
